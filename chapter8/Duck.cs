@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace chapter8
 {
-    class Duck : IComparable<Duck>
+    class Duck : Bird, IComparable<Duck>
     {
         public int size;
         public KindOfDuck Kind;
+
+        public override void Fly()
+        {
+            Console.WriteLine("Ducks can fly!");
+        }
+
+        public override string ToString()
+        {
+            return "A duck named " + base.Name;
+        }
 
         public int CompareTo(Duck other)
         {
@@ -27,10 +37,10 @@ namespace chapter8
             }
         }
 
-        public override string ToString()
-        {
-            return this.size.ToString();
-        }
+        //public override string ToString()
+        //{
+         //   return this.size.ToString();
+        //}
     }
 
     enum KindOfDuck

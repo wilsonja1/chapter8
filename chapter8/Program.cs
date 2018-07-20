@@ -18,14 +18,19 @@ namespace chapter8
                 new Duck() { Kind = KindOfDuck.Mallard, size = 13 },
             };
 
-            ducks.Sort();
+            List<Bird> birds = new List<Bird>();
+
+            birds.Add(new Penguin() { Name = "me" });
+            birds.AddRange(ducks);
+
+            /*ducks.Sort();
             foreach(Duck d in ducks)
             {
                 Console.WriteLine(d.size);
             }
 
             Console.WriteLine(ducks[0].ToString());
-            Console.ReadKey();
+            Console.ReadKey();*/
         }
     }
 }
