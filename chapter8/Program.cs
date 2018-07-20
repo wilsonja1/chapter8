@@ -10,6 +10,14 @@ namespace chapter8
     {
         static void Main(string[] args)
         {
+            List<Duck> ducks = new List<Duck>() {
+                new Duck() { Kind=KindOfDuck.Mallard, size = 17},
+                new Duck() { Kind = KindOfDuck.Decoy, size = 17 },
+                new Duck() { Kind = KindOfDuck.Mallard, size = 17 },
+                new Duck() { Kind = KindOfDuck.Muscovy, size = 17 },
+                new Duck() { Kind = KindOfDuck.Mallard, size = 17 },
+            };
+
         }
     }
 }
