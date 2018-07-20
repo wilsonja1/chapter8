@@ -24,6 +24,7 @@ namespace chapter8
                 Console.WriteLine(d.size);
             }
 
+            Console.WriteLine(ducks[0].ToString());
             Console.ReadKey();
         }
     }
